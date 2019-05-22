@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Futura Round';
+    src: url('fonts/FuturaRound-Bold.woff2') format('woff2'),
+        url('fonts/FuturaRound-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Round';
+    src: url('fonts/FuturaRound-Book.woff2') format('woff2'),
+        url('fonts/FuturaRound-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tumbly';
+    src: url('fonts/Tumbly.woff2') format('woff2'),
+        url('fonts/Tumbly.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Ajustes generales de la plantilla */
+.whb-scroll-stick .woodmart-logo img {  
+   max-height: 90px;
+    margin-top: -12px;
+        transform: scale(1.4) translateY(17px);
+}
+@import "vars";
+
+
+
+h2 {
+    text-align: center;
+}
+
+/*Ajuste de FullWidth*/
+
+.page-template {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+/*Esquema por defecto para las secciones*/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        width: 50%;
+    }
+    .col2 {
+        width: 33%;
+    }
+}
+
+/*Ajuste general*/
+
+.template-section {
+   
+        padding: 50px 0;
+    
+    .center {
+        text-align: center;
+    }
+    .contenedor {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col {
+        min-height: 500px;
+        padding: 60px;
+    }
+    
+    h1 {
+        color: @azul;
+         font-family: 'Tumbly';
+       
+            font-size: 68px;
+        
+    }
+
+    h2 {
+        color: @cafe;
+        font-family: 'Tumbly';
+            font-size: 55px;
+        
+        line-height: 1.3em;
+
+    }
+
+    p,
+    ul {
+        color: @azul;
+        font-size: 1.2em;
+        font-family: 'Futura Round';
+    }
+
+    ul {
+        li {
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            color: white;
+            &::before {
+                content: "•";
+                color: @cafe;
+                padding-right: 10px;
+                position: absolute;
+                left: -15px;
+            }
+        }
+
+    }
+
+
+
+    .btn {
+        transition: all 0.3s ease-in-out;
+       font-family: 'Futura Round';
+            text-transform: none;
+            font-size: 1.6em;
+         -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 5px;
+        font-weight: normal;
+            background: @azul;
+        padding: 20px;
+            color: #fff;
+            &:hover {
+                background: white;
+                color: @azul;
+            }
+        
+    }
+}
+
+
+//INICIO
+body.home { 
+    .row {
+        display: inherit!important;
+    }
+#banner {
+    padding: 100px 0;
+    background: url(../img/banner.jpg) no-repeat center;
+   
+    .bannernosotras {
+        h1 {
+                margin-top: 148px;
+        }
+        p {
+           
+            font-weight: bold;
+            &.somos {
+                margin-top: 80px;
+            }
+        }
+        background: url(../img/bannernosotras2.png) no-repeat center;
+        text-align: center;
+       margin: 2em auto;
+    overflow: hidden;
+    padding: 1em 1.5em;
+    position: relative;
+    width: 480px; /* ancho */
+            padding-bottom: 200px;
+            left: -300px;
+    }
+    .center {
+         text-align: center;
+       margin: 2em auto;
+  
+   
+    position: relative;
+margin-top: -118px;
+           
+            left: -300px;
+    }
+   
+}
+    
+    
+    
+    #joyeria {
+        p {
+            text-align: center;
+                max-width: 800px;
+    position: relative;
+    margin: 20px auto;
+            
+        }
+    }    
+    
+    #blog {
+         background: url(../img/blog.jpg) no-repeat center;
+                padding: 800px 0;
+        h2 {
+            color: white;
+                    margin-top: -605px;
+        }
+        p {
+            text-align: center;
+                max-width: 800px;
+    position: relative;
+    margin: 20px auto;
+            
+        }
+    }    
+    
+    #contacto {
+        .blanco {
+            h2 {
+                text-align: left;
+                position: relative
+                    left: 60px;
+            }
+        }
+        .azul {
+            background-color: @azul;
+            p {
+               
+                color: @cafe;
+                &.prioridad {
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+            
+            .brindamos {
+                 background: url(../img/contacto2.png) no-repeat center;
+        text-align: center;
+  //     margin: 2em auto;
+//    overflow: hidden;
+    padding: 1em 1.5em;
+    position: relative;
+    width: 480px; /* ancho */
+                    margin-top: -70px;
+  //          padding-bottom: 200px;
+    //        left: -300px;
+            }
+            .caldera-grid .form-control {
+            background-color: transparent;
+    border: 1px solid #fff;
+    color: white!important;
+            
+            }
+            input::placeholder, textarea::placeholder {
+                 color: white!important;
+            }
+            
+             .btn {
+           text-align: right;
+    position: relative;
+    float: right;
+            background-color: transparent;
+                 border-color: white;
+      padding: 10px 20px 10px 20px;
+              
+       
+        &:hover {
+                background-color: white;
+               color: @azul;
+            }
+    }
+            span {
+                color: white;
+            }
+            
+           
+            .col {
+                    padding: 60px 10px;
+                
+            }
+            .right {
+                    margin-right: 10px;
+            }
+            .left {
+                margin-left: -30px;
+            }
+            .grid2 .col {
+    /* min-height: 500px; */
+    padding: 60px 0;
+                    min-height: auto;
+}
+            
+            
+        }
+    }
+}
+
+body.home {
+    .contenedor {
+                   max-width: 1000px;
+               
+        }
+    #nosotros{
+        h1 {
+            border-bottom: 1px solid @azul;  
+        }
+        .contenedor {
+                   max-width: 1000px;
+               
+        }
+        .col {
+            text-align: center;
+                 padding: inherit;
+        }
+        .somos {
+            background-color: @azul;
+           
+            font-weight: bold;
+             margin: 2em auto;
+    overflow: hidden;
+    padding: 2.5em 1.5em;
+    position: relative;
+    width: 480px; /* ancho */
+          
+    right: -40px;
+                z-index: 1;
+            p {
+                color: white;
+                    margin-bottom: auto;
+            }
+        }
+        .soy {
+            position: relative;
+    right: -40px;
+
+                width: 350px;
+                            margin: 20px auto;
+        }
+        .soy2 {
+            position: relative;
+    
+
+                width: 350px;
+                            margin: 20px auto;
+        }
+        .sam {
+                margin-top: 140px;
+        }
+    }
+    #marca {
+        background-color: @cafe;
+        h2 {
+            color: white;
+            font-size: 40px;
+        }
+    }
+    #elegir {
+         background: url(../img/elegir.png) no-repeat center;
+         h2 {
+            color: white;
+        }
+    }
+    #listo {
+        background-color: @azul;
+        p {
+            color: white;
+        }
+    }
+}
