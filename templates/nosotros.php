@@ -11,7 +11,7 @@
           
       
         <div class="contenedor">
-            <div class="grid">
+            <div class="grid  invertido">
                 <div class="col">
                 <h1 class="soy">Nosotras</h1>
                    <div class="somos">
@@ -25,8 +25,8 @@ K’UUB Natural Baby Baltic</p>
                     
                 </div>
                 
-                <div class="col">
-                   <img class="right"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/nosotras.png" alt="Logo">
+                <div class="col ">
+               <img class="right"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/nosotras.png" alt="Logo">
                
                   
                 </div>

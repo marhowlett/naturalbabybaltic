@@ -11,7 +11,7 @@
           
       
         <div class="contenedor">
-            <div class="grid">
+            <div class="grid invertido">
                 <div class="col">
                    <p class="prioridad">Tu eres nuestra prioridad</p>
                     <?php echo do_shortcode( '[caldera_form id="CF5babff4a364a4"]' ); ?>
@@ -21,11 +21,13 @@
                 <div class="col">
                <img class="right"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/whats.png" alt="Logo">
                <img class="right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefono.png" alt="Logo">
-               <span >7775604278</span>
+               <a href="https://wa.me/527775604278">7775604278 </a> 
+               
                 </div>
                    <div class="col">
                 <img class="right left"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/email.png" alt="Logo">
-                <span>contacto@naturalbabybaltic.com</span>
+                <a href="mailto:contacto@naturalbabybaltic.com?Subject=Me gustaría obtener información">  contacto@naturalbabybaltic.com</a> 
+               
                 </div>
                     </div>
                 </div>

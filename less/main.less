@@ -30,8 +30,23 @@
 }
 @import "vars";
 
+.main-page-wrapper {
+    padding-top: inherit;
+}
+.whb-scroll-stick .woodmart-logo img {
+   
+    margin-top: -88px;
+}
+@media (min-width: 1025px){
+.whb-sticked .whb-general-header .woodmart-logo img {
+   
+    margin-top: -24px;
+}
 
-
+}
+ul.menu a {
+    color: @azul!important;
+}
 h2 {
     text-align: center;
 }
@@ -44,6 +59,7 @@ h2 {
         width: 100%;
     }
 }
+
 
 
 /*Esquema por defecto para las secciones*/
@@ -146,12 +162,13 @@ h2 {
 //INICIO
 body.home { 
     .row {
-        display: inherit!important;
+        display: inherit;
     }
+}
 #banner {
-    padding: 100px 0;
-    background: url(../img/banner.jpg) no-repeat center;
    
+    background: url(../img/banner.jpg) no-repeat center;
+    padding: 100px 0;
     .bannernosotras {
         h1 {
                 margin-top: 148px;
@@ -200,7 +217,7 @@ margin-top: -118px;
     
     #blog {
          background: url(../img/blog.jpg) no-repeat center;
-                padding: 800px 0;
+                   padding: 630px 0;
         h2 {
             color: white;
                     margin-top: -605px;
@@ -214,11 +231,23 @@ margin-top: -118px;
         }
     }    
     
-    #contacto {
+  
+
+
+
+
+
+
+
+
+
+
+  #contacto {
+       padding: initial;
         .blanco {
             h2 {
                 text-align: left;
-                position: relative
+                position: relative;
                     left: 60px;
             }
         }
@@ -269,8 +298,8 @@ margin-top: -118px;
                color: @azul;
             }
     }
-            span {
-                color: white;
+            a,span {
+                color: white!important;
             }
             
            
@@ -293,13 +322,23 @@ margin-top: -118px;
             
         }
     }
+
+.woodmart-prefooter {
+
+    padding-bottom: inherit;
 }
 
-body.home {
+body.page-template-nosotros {
+    
+    .row {
+            display: inherit;
+    }
     .contenedor {
                    max-width: 1000px;
                
         }
+}
+    
     #nosotros{
         h1 {
             border-bottom: 1px solid @azul;  
@@ -366,4 +405,12 @@ body.home {
             color: white;
         }
     }
+
+.he1 {
+        margin-top: 30px;
+    span {
+        font-weight: normal;
+    }
 }
+
+@import "responsive";
