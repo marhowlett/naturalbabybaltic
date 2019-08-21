@@ -1,42 +1,40 @@
 @font-face {
-    font-family: 'Futura Round';
-    src: url('fonts/FuturaRound-Bold.woff2') format('woff2'),
-        url('fonts/FuturaRound-Bold.woff') format('woff');
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/Raleway-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura Round';
-    src: url('fonts/FuturaRound-Book.woff2') format('woff2'),
-        url('fonts/FuturaRound-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tumbly';
-    src: url('fonts/Tumbly.woff2') format('woff2'),
-        url('fonts/Tumbly.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
 }
 
 /* Ajustes generales de la plantilla */
 .whb-scroll-stick .woodmart-logo img {  
    max-height: 90px;
-    margin-top: -12px;
+       margin-top: -140px;
         transform: scale(1.4) translateY(17px);
 }
-@import "vars";
 
 .main-page-wrapper {
-    padding-top: inherit;
+        padding-top: inherit;
+    margin-top: inherit;
 }
-.whb-scroll-stick .woodmart-logo img {
-   
-    margin-top: -88px;
-}
+
+
 @media (min-width: 1025px){
 .whb-sticked .whb-general-header .woodmart-logo img {
    
@@ -44,12 +42,13 @@
 }
 
 }
-ul.menu a {
-    color: @azul!important;
+.woodmart-load-more  {
+    display: none!important;
 }
 h2 {
     text-align: center;
 }
+@import "vars";
 
 /*Ajuste de FullWidth*/
 
@@ -73,6 +72,9 @@ h2 {
     .col2 {
         width: 33%;
     }
+    .col3 {
+        width: 25%;
+    }
 }
 
 /*Ajuste general*/
@@ -95,32 +97,27 @@ h2 {
         padding: 60px;
     }
     
-    h1 {
-        color: @azul;
-         font-family: 'Tumbly';
-       
-            font-size: 68px;
-        
-    }
+
 
     h2 {
         color: @cafe;
-        font-family: 'Tumbly';
+       font-family: 'Raleway';
             font-size: 55px;
-        
+        font-weight: bold;
         line-height: 1.3em;
 
     }
 
     p,
     ul {
-        color: @azul;
+        color: @gris;
         font-size: 1.2em;
-        font-family: 'Futura Round';
+        font-family: 'Raleway';
     }
 
     ul {
         li {
+            font-family: 'Raleway';
             position: relative;
             margin-left: 15px;
             margin-bottom: 10px;
@@ -140,13 +137,13 @@ h2 {
 
     .btn {
         transition: all 0.3s ease-in-out;
-       font-family: 'Futura Round';
+       font-family: 'Raleway';
             text-transform: none;
             font-size: 1.6em;
          -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 5px;
-        font-weight: normal;
+        font-weight: bold;
             background: @azul;
         padding: 20px;
             color: #fff;
@@ -154,58 +151,72 @@ h2 {
                 background: white;
                 color: @azul;
             }
-        
+        &.cafe {
+            background-color: @cafe;
+            
+        }
     }
 }
 
 
 //INICIO
-body.home { 
-    .row {
+
+    body.home .row,  body.page-id-36 .row, body.page-id-63 .row{
         display: inherit;
     }
-}
+
+
+
 #banner {
    
-    background: url(../img/banner.jpg) no-repeat center;
-    padding: 100px 0;
-    .bannernosotras {
-        h1 {
-                margin-top: 148px;
-        }
-        p {
-           
-            font-weight: bold;
-            &.somos {
-                margin-top: 80px;
-            }
-        }
-        background: url(../img/bannernosotras2.png) no-repeat center;
-        text-align: center;
-       margin: 2em auto;
-    overflow: hidden;
-    padding: 1em 1.5em;
+    background: url(../img/banner.png) no-repeat center;
+          padding: 200px 0;
+    h2 {
+            text-align: left;
     position: relative;
-    width: 480px; /* ancho */
-            padding-bottom: 200px;
-            left: -300px;
+           top: 232px;
+    left: 100px;
+    }
+    .bannernosotras {
+       background-color: @azul;
+            width: 813px;
+    padding: 15px;
+    position: relative;
+          top: 232px;
+        p {
+               position: relative;
+    left: 100px;
+    top: 8px;
+    font-size: 30px;
+            color: white;
+        }
     }
     .center {
-         text-align: center;
-       margin: 2em auto;
-  
-   
+               text-align: left;
     position: relative;
-margin-top: -118px;
-           
-            left: -300px;
+    top: 126px;
+    left: 759px;
+        .btn {
+                padding: 24px 73px;
+        }
+    
     }
    
 }
-    
-    
-    
-    #joyeria {
+ #joyeria {
+     .invitamos {
+             background-color: #00c3a8;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 1px;
+         
+         p {
+             color: white;
+             font-weight: bold;
+         }
+         
+     }
         p {
             text-align: center;
                 max-width: 800px;
@@ -213,14 +224,32 @@ margin-top: -118px;
     margin: 20px auto;
             
         }
+     hr {
+             width: 400px;
+         border-top: 4px solid #c9ad62;
+    position: relative;
+                top: -35px;
+         &.izquierda {
+             position: relative;
+             float: left;
+         }
+         &.derecha {
+             position: relative;
+             float: right;
+         }
+     }
     }    
-    
-    #blog {
-         background: url(../img/blog.jpg) no-repeat center;
-                   padding: 630px 0;
+#blog {
+         background-color: @grisclaro;
+          hr {
+          width: 800px;
+    border-top: 4px solid #c9ad62;
+    position: relative;
+    top: -50px;
+    }
         h2 {
-            color: white;
-                    margin-top: -605px;
+            color: @azul;
+                   
         }
         p {
             text-align: center;
@@ -229,26 +258,60 @@ margin-top: -118px;
     margin: 20px auto;
             
         }
-    }    
-    
-  
+    }   
+#pagar { 
+display: none;
+}
+body.product-template-default #pagar {
+    display: inherit;
+    h2 {
+           text-align: left;
+    position: relative;
+    left: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+    h3, p {
+        color: @gris;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    .brindamos {
+        background-color: @azul;
+        p,a{
+            color: white;
+        }
+        
+    }
+    .col {
+            min-height: inherit; 
+    }
+    .real {
+            padding: 60px;
+        p {
+                max-width: 387px;
+            &.detalle {
+                
+            }
+        }
+    }
+    .colpr {
+        width: 50%;
+        padding: 0px;
+    }
 
 
-
-
-
-
-
-
-
-
-  #contacto {
+}
+#contacto {
        padding: initial;
         .blanco {
             h2 {
-                text-align: left;
-                position: relative;
-                    left: 60px;
+                   text-align: left;
+    position: relative;
+    left: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
             }
         }
         .azul {
@@ -298,10 +361,13 @@ margin-top: -118px;
                color: @azul;
             }
     }
-            a,span {
+            
+            a,span, .dial-code {
                 color: white!important;
             }
-            
+            .country-list {
+                background-color: #c9ad62;
+            }
            
             .col {
                     padding: 60px 10px;
@@ -322,59 +388,56 @@ margin-top: -118px;
             
         }
     }
+/**NOSOTROS*/
 
-.woodmart-prefooter {
-
-    padding-bottom: inherit;
-}
-
-body.page-template-nosotros {
-    
-    .row {
-            display: inherit;
-    }
-    .contenedor {
-                   max-width: 1000px;
-               
-        }
-}
-    
-    #nosotros{
+#nosotros{
         h1 {
-            border-bottom: 1px solid @azul;  
+            font-weight: normal;
+            color: @cafe;
+             position: relative;
+       right: -22px;
+            font-size: 35px;
         }
-        .contenedor {
-                   max-width: 1000px;
-               
-        }
+    
+    .fondo {
+         background: url(../img/arele.jpg) no-repeat center;
+    }
+        
         .col {
+                min-height: 663px;
             text-align: center;
                  padding: inherit;
         }
         .somos {
-            background-color: @azul;
-           
-            font-weight: bold;
-             margin: 2em auto;
+              background-color: #00c3a8;
+    font-weight: bold;
+    margin: 2em auto;
     overflow: hidden;
-    padding: 2.5em 1.5em;
+    padding: 1.5em 1.5em;
     position: relative;
-    width: 480px; /* ancho */
-          
-    right: -40px;
-                z-index: 1;
-            p {
-                color: white;
+        width: 105%;
+    /* right: -40px; */
+    z-index: 1;
+            h2 {
+                
                     margin-bottom: auto;
+                text-align: center;
+               color: white;
+                   font-size: 35px;
             }
+
         }
-        .soy {
-            position: relative;
-    right: -40px;
+        p {
+           
 
                 width: 350px;
                             margin: 20px auto;
-        }
+             position: relative;
+       right: -28px;
+    
+                color: @grisletra;
+                text-align: justify;
+            }
         .soy2 {
             position: relative;
     
@@ -386,31 +449,291 @@ body.page-template-nosotros {
                 margin-top: 140px;
         }
     }
-    #marca {
-        background-color: @cafe;
-        h2 {
-            color: white;
-            font-size: 40px;
-        }
-    }
-    #elegir {
-         background: url(../img/elegir.png) no-repeat center;
-         h2 {
-            color: white;
-        }
-    }
-    #listo {
-        background-color: @azul;
-        p {
-            color: white;
-        }
-    }
 
-.he1 {
+#tienda{
+        h1 {
+            
+            color: @cafe;
+               position: relative;
+    right: -76px;
+    font-size: 50px;
+    top: -21px;
+        }
+    
+    .fondo {
+         background: url(../img/joya.png) no-repeat center;
+            margin-bottom: 50px;
+    }
+        
+        .col {
+                    min-height: 980px;
+            text-align: center;
+                 padding: inherit;
+        }
+        .somos {
+              background-color: #00c3a8;
+    font-weight: bold;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 1.5em 1.5em;
+    position: relative;
+        width: 100%;
+    /* right: -40px; */
+    z-index: 1;
+                margin-top: 203px;
+            h2 {
+                
+                    margin-bottom: auto;
+                text-align: center;
+               color: white;
+                     font-size: 45px;
+    position: relative;
+    right: -68px;
+            }
+
+        }
+        p {
+           
+
+                width: 350px;
+                            margin: 20px auto;
+             position: relative;
+       right: -28px;
+    
+                color: @grisletra;
+                text-align: justify;
+            strong {
+                    font-size: 1.4em;
+            }
+            }
+        .soy2 {
+            position: relative;
+    
+
+                width: 350px;
+                            margin: 20px auto;
+        }
+        .sam {
+                margin-top: 140px;
+        }
+    }
+#nosotros2{
+        h1 {
+               
+            font-weight: normal;
+            color: @azul;
+                position: relative;
+    text-align: left;
+    left: 150px;
+    right: -50px;
+    font-size: 50px;
+margin-top: 50px;
+            strong {
+                color: @cafe;
+            }
+        }
+    
+    .fondo {
+         background: url(../img/sam.jpg) no-repeat center;
+    }
+        
+        .col {
+                min-height: 663px;
+            text-align: center;
+                 padding: inherit;
+        }
+        .somos {
+              background-color: #00c3a8;
+       font-weight: bold;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 1.5em 1.5em;
+    position: relative;
+    width: 100%;
+    right: -40px;
+    z-index: 1;
+            h2 {
+                    margin-bottom: auto;
+    text-align: left;
+    position: relative;
+    left: 100px;
+               color: white;
+                   font-size: 35px;
+            }
+
+        }
+        p {
+                  font-weight: normal;
+    width: 350px;
+    margin: 20px 0px;
+    position: relative;
+    /* right: -15px; */
+    left: 100px;
+   
+                color: white;
+                text-align: justify;
+            }
+        .soy2 {
+            position: relative;
+    
+
+                width: 350px;
+                            margin: 20px auto;
+        }
+        .sam {
+                margin-top: 140px;
+        }
+    }
+#marca {
+        padding: inherit;
+    padding-bottom: 30px;
+     .invitamos {
+             background-color: @cafe;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 1px;
+         h3 {
+             color: white;
+                 position: relative;
+    top: 10px;
+         }
+         
+     }
+    hr {
+             width: 400px;
+         border-top: 4px solid @azul;
+    position: relative;
+                top: -35px;
+         &.izquierda {
+             position: relative;
+             float: left;
+         }
+         &.derecha {
+             position: relative;
+             float: right;
+         }
+     }
+    
+}
+#elegir {
+    h2 {
+        color: @azul;
+        margin-bottom: 30px;
+        
+    }
+    li {
+            color: @grisletra;
+        }
+     ul li::before {
+    content: "•";
+    color: #c9ad62;
+    padding-right: 10px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    font-size: 30px;
+}
+    .col {
+            padding: 10px;
+    }
+}
+#familia {
+    .invitamos {
+             background-color: #00c3a8;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 1px;
+         
+         p {
+             color: white;
+             font-weight: bold;
+                 position: relative;
+    top: 10px;
+         }
+         
+     }
+    hr {
+             width: 400px;
+         border-top: 4px solid #c9ad62;
+    position: relative;
+                   top: -25px;
+         &.izquierda {
+             position: relative;
+             float: left;
+         }
+         &.derecha {
+             position: relative;
+             float: right;
+         }
+     }
+    a{
+        font-weight: bold;
+        
+    }
+    p.listo {
         margin-top: 30px;
+        text-align: center;
+    }
+    h2 {
+        color: @azul;
+    }
+}
+.product_title{
+background-color: #00c3a8;
+    color: white;
+    /* padding-left: 39px; */
+    padding: 10px 20px 20px 90px;
+    text-transform: uppercase;
+}
+#aviso {
+     .contenedor {
+    max-width: 900px;
+         text-align: justify;
+             background-color: @grisclaro;
+   
+    padding: 40px;
+    }
+}
+ul.menu a {
+    color: @azul!important;
+}
+.he1 {
+              margin-top: 5px;
     span {
         font-weight: normal;
+            padding: 10px 15px;
     }
 }
 
+.search-button-icon, .woodmart-cart-icon, .woocommerce-Price-amount, .wishlist-icon {
+    color: @azul!important;
+}
+.woodmart-cart-number, .wishlist-count {
+    background-color: @cafe!important;
+}
+#ficha {
+    h3, p {
+        color: @gris;
+    }
+}
+
+footer {
+    text-align: center;
+    .grid {
+        display: flex;
+    }
+    p {
+        color: @azul!important;
+        text-align: center;
+        
+    }
+    .lap {
+        display: inherit;
+    }
+    .movil {
+        display: none;
+    }
+}
 @import "responsive";

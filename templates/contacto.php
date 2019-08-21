@@ -1,9 +1,53 @@
-  <section id="contacto" class="template-section">
+  <section id="pagar" class="template-section">
+      
+      <div class="contenedor">
+        
+          <h2>¿Cómo pagar?</h2>
+          
+       </div>
+        
+          
+      
+            <div class="grid invertido">
+                <div class="col">
+                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/PayPal.jpg" alt="Logo">
+                    <h3>Tarjeta de crédito, débito o PayPal</h3>
+                    <p>
+En el e-mail de confirmación de compra, encontrarás toda la información que necesitas para realizar el pago.</p>
+                    
+                    
+                </div>
+                
+                <div class="col colpr">
+                   <div class="brindamos">
+                   
+<div class="real">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/box.png" alt="Logo">
+                    <p>Realizamos envíos nacionales e internacionales por DHL.  Los costos de envío corren por cuenta del cliente. </p>
+                    <p class="detalle">
+                        Para más detalles consulta:<br>
+ <a href="https://naturalbabybaltic.com/nuestras-politicas-de-compra/"><strong>Nuestras Políticas de Compra y Envío</strong></a>
+                    </p>
+                    
+                    
+
+                </div>
+                </div>
+                </div>
+                
+
+
+            </div>
+       
+        
+    </section>  
+     
+     <section id="contacto" class="template-section">
       <div class="blanco">
           
       
         <div class="contenedor">
-          <h2>Contactanos</h2>
+          <h2>Contáctanos</h2>
           
         </div>
         </div>
@@ -40,14 +84,14 @@
                 
                 <div class="col">
                    <div class="brindamos">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/kuub.png" alt="Logo">
+                    <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kuub.png" alt="Logo">
                     <p>Te brindaremos atención personalizada,<br> responderemos tus dudas y podrás <br>
 compartir con nosotras tus experiencias <br>
 con la joyeria natural de ámbar báltico <br>
 y piedras semipreciosas.</p>
                     <p>
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Logo">
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt="Logo">
+                        <a href="https://www.facebook.com/Natural-Baby-Baltic-438269763651942/" class="social"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Logo"></a>
+                        <a href="https://www.instagram.com/naturalbabybaltic/" class="social"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt="Logo"></a>
                     </p>
                     
                     
@@ -61,3 +105,6 @@ y piedras semipreciosas.</p>
         </div>
         </div>
     </section>
+    
+   
+ 

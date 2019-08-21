@@ -1,0 +1,138 @@
+//main: main.less
+@media (max-width: 768px) {
+.offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
+    display: none;
+}
+
+    
+    /*LOGO*/
+    .whb-scroll-stick .woodmart-logo img {
+    padding-top: 0;
+    transform: scale(2) translateY(15px);
+}
+    
+    //Fix slide
+    
+    canvas{
+        touch-action:auto !important;
+    }
+    
+    .scene-nav{
+        display: none;
+    }
+    
+    /*Esquema por defecto para las secciones*/
+    .grid {
+		    display: initial;
+        .col {
+            width: 100%;
+        }
+        .col2 {
+            width: 100%;
+        }
+        
+        &.invertido{
+            flex-wrap: wrap-reverse;
+        } 
+    }
+    
+.template-section a.btn {
+    margin: 0 auto;
+    display: block;
+     margin-top: 25px;
+    padding: 15px;
+    margin-left: 10px!important;
+    margin-right: 10px;
+}
+    
+
+
+    .template-section {
+        .col {
+            min-height: auto;
+            padding: 20px;
+        }
+		h1 {
+			    font-size: 36px;
+		}
+        h2 {
+			    font-size: 32px;
+		}
+    }
+    
+ #banner {
+    background: url(../img/bannermovil.png) no-repeat center;
+         padding: inherit;
+     .bannernosotras {
+         padding-bottom: 500px;
+    background: none;
+             left: inherit;
+             width: initial;
+     }
+     p.somos {
+    margin-top: inherit!important;
+}
+     h1 {
+        margin-top: 20px!important;
+     }
+   
+}
+    #joyeria{
+       h2 {
+                   margin-top: -30px;
+    margin-bottom: 30px;
+        } 
+     p {
+   
+    max-width: 300px;
+        
+    }
+    }
+    #contacto .blanco h2 {
+    text-align: left;
+    position: relative;
+    left: 30px;
+    margin-top: 10px;
+}
+    #contacto .azul p.prioridad {
+    text-align: center;
+    }
+    #contacto .azul .grid2 .col {
+   
+    text-align: center;
+            padding: inherit;
+    margin-top: 30px;
+}
+    .brindamos {
+            width: inherit!important;
+    }
+    
+    #nosotros{
+        .soy {
+   
+    right: inherit;
+    width: 300px;
+
+}
+        .somos {
+                width: initial;
+    right: initial;
+        }
+    }
+    .sam {
+    margin-top: 50px!important;
+}
+    .soy2 {
+        width: 300px!important;
+    }
+    
+    #elegir {
+      background: url(../img/elegir.png) repeat center;
+}
+    #listo {
+        p {
+            text-align: center;
+        }
+    }
+
+}

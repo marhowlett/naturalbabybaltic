@@ -1,9 +1,13 @@
 //main: main.less
+
 @media (max-width: 768px) {
 .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
     display: none;
 }
-
+    .marca {
+                margin-top: -25px;
+            background-color: #c9ad62;
+    }
     
     /*LOGO*/
     .whb-scroll-stick .woodmart-logo img {
@@ -59,34 +63,58 @@
 			    font-size: 32px;
 		}
     }
+    #banner {
+    background: url(../img/banner.jpg) no-repeat center;
+    padding: inherit;
+        position: relative;
+    top: -70px;
+        h2 {
+    text-align: center;
+    position: relative;
+    top: 343px;
     
- #banner {
-    background: url(../img/bannermovil.png) no-repeat center;
-         padding: inherit;
-     .bannernosotras {
-         padding-bottom: 500px;
-    background: none;
-             left: inherit;
-             width: initial;
-     }
-     p.somos {
-    margin-top: inherit!important;
-}
-     h1 {
-        margin-top: 20px!important;
-     }
+    margin-bottom: 137px;
+                left: inherit;
+    font-size: 30px;
    
+        }
+        .bannernosotras p {
+    position: relative;
+    left: inherit;
+    top: 8px;
+    font-size: 16px;
+    color: white;
 }
-    #joyeria{
-       h2 {
-                   margin-top: -30px;
-    margin-bottom: 30px;
-        } 
-     p {
-   
-    max-width: 300px;
+        .center{
+          
+    text-align: left;
+    position: relative;
+    top: 191px;
+    left: inherit;
+
+         .btn {
+    padding: 10px;
+            }
+            
+        
+        }
         
     }
+    .whb-scroll-stick .woodmart-logo img {
+         margin-top: -80px;
+}
+    #joyeria {
+                margin-top: 130px;
+        hr {
+                display: none;
+        }
+        .invitamos {
+                width: auto;
+                margin-bottom: -160px;
+        }
+    }
+    #contacto .social {
+            margin-top: -20px;
     }
     #contacto .blanco h2 {
     text-align: left;
@@ -103,36 +131,154 @@
             padding: inherit;
     margin-top: 30px;
 }
-    .brindamos {
+ .brindamos {
             width: inherit!important;
+     img{
+          margin-bottom: 5px;
+         &.logo {
+        margin-bottom: 15px;
+         width: 50%;
+     }
+     }
     }
     
+    footer {
+        grid {
+            display: flex;
+        }
+        .lap {
+        display: none;
+    }
+    .movil {
+        display: inherit;
+    }
+        p {
+                font-size: 12px!important;
+        }
+    }
+    #tienda .fondo {
+    background: url(../img/joyamovil.png) no-repeat center;
+    margin-bottom: 50px;
+}
+    #tienda .col {
+    min-height: 618px;
+    }
     #nosotros{
+        h1 {
+        right: inherit;
+    }
+        .somos {
+                width: 100%;
+                font-size: 34px;
+                margin-top: -14px;
+                padding: 1em 1em;
+        }
+        .fondo {
+    background: url(../img/arelimovil.jpg) no-repeat center;
+}
+        .shop-loop-head {
+    margin-top: -0px;
+}
         .soy {
-   
-    right: inherit;
-    width: 300px;
-
+                position: relative;
+        top: 390px;
+        }
+        .fondo {
+            position: relative;
+           top: -540px;
+        }
+        p {
+                right: inherit;
+            width: 300px;
+        }
+        
+    }
+    #nosotros2{
+       .fondo {
+    background: url(../img/sammovil.jpg) no-repeat center;
 }
         .somos {
-                width: initial;
-    right: initial;
-        }
-    }
-    .sam {
-    margin-top: 50px!important;
+    background-color: #00c3a8;
+    font-weight: bold;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 1.5em 1.5em;
+    position: relative;
+    width: 100%;
+    top: -253px;
+    right: inherit;
+    z-index: 1;
 }
-    .soy2 {
-        width: 300px!important;
-    }
-    
-    #elegir {
-      background: url(../img/elegir.png) repeat center;
+         h1 {
+             left: inherit;
+    font-weight: normal;
+    color: #00c3a8;
+    position: relative;
+    text-align: center;
+    right: inherit;
+    font-size: 50px;
+    margin-top: inherit;
+           top: -650px;
 }
-    #listo {
+       .col {
+       min-height: 457px;
+    text-align: center;
+    padding: inherit;
+    position: relative;
+        top: -108px;
+}
         p {
-            text-align: center;
+    font-weight: normal;
+       width: inherit;
+    margin: 20px 0px;
+    position: relative;
+    right: inherit;
+    left: inherit;
+    color: white;
+    text-align: justify;
+}
+    }
+    #marca {
+                margin-top: -375px;
+        hr {
+            display: none;
+        }
+        .invitamos {
+                width: inherit;
         }
     }
+    #familia {
+        hr {
+            display: none;
+        }
+        .invitamos {
+                width: inherit;
+        }
+    }
+    body.product-template-default #pagar .colpr {
+    width: 100%;
+    padding: 0px;
+}
+    #tienda{
+        .somos{
+            margin-top: inherit;
+        h2 {
+    
+    right: inherit;
+}
+}
+        h1 {
+    color: #c9ad62;
+    position: relative;
+    right: inherit;
+    font-size: 50px;
+    top: 0px;
+}
+        p {
+    width: 300px;
+                right: inherit;
+        }
+    }
+
 
 }
