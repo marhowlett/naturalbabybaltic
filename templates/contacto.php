@@ -57,7 +57,7 @@ En el e-mail de confirmación de compra, encontrarás toda la información que n
         <div class="contenedor">
             <div class="grid invertido">
                 <div class="col">
-                   <p class="prioridad">Tu eres nuestra prioridad</p>
+                   <p class="prioridad">¡Tu eres nuestra prioridad!</p>
                     <?php echo do_shortcode( '[caldera_form id="CF5babff4a364a4"]' ); ?>
                     
                 <div class="contenedor">
@@ -65,7 +65,7 @@ En el e-mail de confirmación de compra, encontrarás toda la información que n
                 <div class="col">
                <img class="right"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/whats.png" alt="Logo">
                <img class="right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefono.png" alt="Logo">
-               <a href="https://wa.me/527775604278">7775604278 </a> 
+               <a href="https://wa.me/527775604278">+527775604278 </a> 
                
                 </div>
                    <div class="col">

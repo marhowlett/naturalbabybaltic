@@ -276,6 +276,9 @@ body.product-template-default #pagar .colpr {
   /* ancho */
   margin-top: -70px;
 }
+#contacto .azul .brindamos img.logo {
+  width: 40%;
+}
 #contacto .azul .caldera-grid .form-control {
   background-color: transparent;
   border: 1px solid #fff;
@@ -776,7 +779,7 @@ footer .movil {
   }
   #nosotros .soy {
     position: relative;
-    top: 390px;
+    top: 445px;
   }
   #nosotros .fondo {
     position: relative;
@@ -864,5 +867,9 @@ footer .movil {
   #tienda p {
     width: 300px;
     right: inherit;
+  }
+  #elegir img {
+    display: block;
+    margin: auto;
   }
 }

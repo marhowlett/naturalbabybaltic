@@ -47,9 +47,9 @@
                 </div>
                 <div class="col3">
                    
-                    <a href="https://enviospaqueteexpress.com/tienda/" class="lap"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shop.png" alt="Logo">
+                    <a href="https://naturalbabybaltic.com/tienda/" class="lap"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shop.png" alt="Logo">
                      <p><b>Tienda</b></p></a>
-                    <a href="https://enviospaqueteexpress.com/tienda/" class="movil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopmovil.png" alt="Logo">
+                    <a href="https://naturalbabybaltic.com/tienda/" class="movil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopmovil.png" alt="Logo">
                   
  <p><b>Tienda</b></p></a>
                 </div>
@@ -73,6 +73,9 @@
                 
 
 
+            </div>
+            <div class="center">
+                <a href="https://naturalbabybaltic.com/aviso-de-privacidad/" ><p><b>Aviso de Privacidad</b></p></a>
             </div>
         </div>
     </footer>
