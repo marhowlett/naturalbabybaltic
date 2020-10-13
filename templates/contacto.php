@@ -90,7 +90,7 @@ compartir con nosotras tus experiencias <br>
 con la joyeria natural de ámbar báltico <br>
 y piedras semipreciosas.</p>
                     <p>
-                        <a href="https://www.facebook.com/Natural-Baby-Baltic-438269763651942/" class="social"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Logo"></a>
+                        <a href="https://www.facebook.com/NaturalBabyBaltic" class="social"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Logo"></a>
                         <a href="https://www.instagram.com/naturalbabybaltic/" class="social"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt="Logo"></a>
                     </p>
                     

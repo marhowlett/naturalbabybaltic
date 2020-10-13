@@ -21,7 +21,9 @@
     font-weight: 600;
     font-style: normal;
 }
-
+a,p,h1,h2,h3,h4,span,ul,li{
+    font-family: 'Raleway'!important;
+}
 /* Ajustes generales de la plantilla */
 .whb-scroll-stick .woodmart-logo img {  
    max-height: 90px;
@@ -33,8 +35,29 @@
         padding-top: inherit;
     margin-top: inherit;
 }
-
-
+body.woodmart-archive-shop{
+.page-title-default {
+   
+  //  background: linear-gradient(to bottom right, #00c3a8, white);
+}
+.page-title.color-scheme-light .entry-title {
+    color: #FFF;
+    font-size: 25px;
+}
+    .term-description {
+  //  background-color: #00c3a8;
+    padding: 20px;
+    p{
+       
+        max-width: 600px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+        
+    }
+}
 @media (min-width: 1025px){
 .whb-sticked .whb-general-header .woodmart-logo img {
    
@@ -50,6 +73,8 @@ h2 {
 }
 @import "vars";
 
+span.wd-tools-text {
+}
 /*Ajuste de FullWidth*/
 
 .page-template {
@@ -107,6 +132,10 @@ h2 {
         line-height: 1.3em;
 
     }
+    h3{
+         font-family: 'Raleway';
+        font-weight: normal;
+    }
 
     p,
     ul {
@@ -161,32 +190,44 @@ h2 {
 
 //INICIO
 
-    body.home .row,  body.page-id-36 .row, body.page-id-63 .row{
+    body.home .row,  body.page-id-36 .row, body.page-id-63 .row, body.page-template-tienda2 .row{
         display: inherit;
     }
-
-
+h4.intro{
+    font-family: 'Raleway';
+}
+body.home{
+    .whb-header {
+    margin-bottom: inherit;
+}
+}
 
 #banner {
-   
-    background: url(../img/banner.png) no-repeat center;
-          padding: 200px 0;
+   p,a,img,h3,h2{
+        opacity: inherit!important;
+            transform: initial!important;
+    }
+    
+          padding: inherit;
     h2 {
             text-align: left;
     position: relative;
            top: 232px;
     left: 100px;
+            font-weight: normal;
     }
     .bannernosotras {
+       
        background-color: @azul;
             width: 813px;
-    padding: 15px;
+    padding: 0px;
     position: relative;
           top: 232px;
+      //   line-height: 13px;
         p {
                position: relative;
     left: 100px;
-    top: 8px;
+   top: 13px;
     font-size: 30px;
             color: white;
         }
@@ -194,10 +235,20 @@ h2 {
     .center {
                text-align: left;
     position: relative;
-    top: 126px;
+          top: 106px;
     left: 759px;
         .btn {
-                padding: 24px 73px;
+               padding: 18px 52px;
+        }
+    
+    }
+        .center2 {
+               text-align: right;
+    position: relative;
+                 top: 217px;
+    left: 100px;
+        .btn {
+                padding: 18px 52px;
         }
     
     }
@@ -247,10 +298,7 @@ h2 {
     position: relative;
     top: -50px;
     }
-        h2 {
-            color: @azul;
-                   
-        }
+       
         p {
             text-align: center;
                 max-width: 800px;
@@ -262,7 +310,7 @@ h2 {
 #pagar { 
 display: none;
 }
-body.product-template-default #pagar {
+body.product-template-default #pagar, body.page-template-tienda2 #pagar {
     display: inherit;
     h2 {
            text-align: left;
@@ -339,8 +387,11 @@ body.product-template-default #pagar {
     //        left: -300px;
                 img.logo {
   
-       width: 40%;
+           width: 30%;
+    margin-bottom: 20px;
+    margin-top: 80px;
 }
+
             }
             .caldera-grid .form-control {
             background-color: transparent;
@@ -456,6 +507,7 @@ body.product-template-default #pagar {
     }
 
 #tienda{
+    padding-top: inherit;
         h1 {
             
             color: @cafe;
@@ -468,6 +520,76 @@ body.product-template-default #pagar {
     .fondo {
          background: url(../img/joya.png) no-repeat center;
             margin-bottom: 50px;
+    }
+        
+        .col {
+                  min-height: 800px;
+            text-align: center;
+                 padding: inherit;
+        }
+        .somos {
+              background-color: #00c3a8;
+    font-weight: bold;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 1.5em 1.5em;
+    position: relative;
+        width: 100%;
+    /* right: -40px; */
+    z-index: 1;
+                   margin-top: 40px;
+            h2 {
+                
+                    margin-bottom: auto;
+                text-align: center;
+               color: white;
+                     font-size: 45px;
+    position: relative;
+    right: -68px;
+            }
+
+        }
+        p {
+           
+
+                width: 350px;
+                            margin: 20px auto;
+             position: relative;
+       right: -28px;
+    
+                color: @grisletra;
+                text-align: justify;
+            strong {
+                    font-size: 1.4em;
+            }
+            }
+        .soy2 {
+            position: relative;
+    
+
+                width: 350px;
+                            margin: 20px auto;
+        }
+        .sam {
+                margin-top: 140px;
+        }
+    }
+
+#tienda2{
+        padding-top: inherit;
+        h1 {
+            
+            color: @cafe;
+               position: relative;
+    right: -76px;
+    font-size: 50px;
+    top: -21px;
+        }
+    
+    .fondo {
+         background: url(../img/joya2.png) no-repeat center;
+           
+            background-size: contain;
     }
         
         .col {
@@ -485,7 +607,7 @@ body.product-template-default #pagar {
         width: 100%;
     /* right: -40px; */
     z-index: 1;
-                margin-top: 203px;
+               
             h2 {
                 
                     margin-bottom: auto;
@@ -500,7 +622,7 @@ body.product-template-default #pagar {
         p {
            
 
-                width: 350px;
+                max-width: 450px;
                             margin: 20px auto;
              position: relative;
        right: -28px;
@@ -692,6 +814,12 @@ background-color: #00c3a8;
     padding: 10px 20px 20px 90px;
     text-transform: uppercase;
 }
+.color-scheme-light .woodmart-product-categories .children {
+    background-color: white;
+    a{
+        color: @azul;
+    }
+}
 #aviso {
      .contenedor {
     max-width: 900px;
@@ -699,6 +827,9 @@ background-color: #00c3a8;
              background-color: @grisclaro;
    
     padding: 40px;
+    }
+    li{
+            color: #7d7d7d;
     }
 }
 ul.menu a {
@@ -741,4 +872,108 @@ footer {
         display: none;
     }
 }
+#catalogo{
+    h2{
+        color: @azul;
+            font-size: 35px;
+    margin-top: 10px;
+    }
+        padding: 150px 0 0 0;
+    .tooltip2 {
+  position: relative;
+  display: inline-block;
+ // border-bottom: 1px dotted black;
+}
+
+.tooltip2 .tooltiptext {
+  //  background-color: rgba(0,0,0,0.5);
+      visibility: hidden; 
+    /* width: 120px; */
+   // background-color: black;
+    color: #fff;
+    text-align: center;
+    /* border-radius: 6px; */
+    padding: 5px 0;
+    position: absolute;
+       left: 10px;
+    top: 80px;
+    padding: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* float: left; */
+    z-index: 1;
+}
+ h3.white {
+    color: white;
+    /* text-align: center; */
+    font-size: 28px;
+}
+    .col{
+           padding: 10px;
+        display: block;
+        margin: auto;
+    }
+    .tooltip2:hover{
+       
+        img{
+             opacity: 0.7;
+        }
+    }
+.tooltip2:hover .tooltiptext {
+   
+  visibility: visible;
+       
+}
+    .pad{
+        padding: 60px;
+    }
+    .colcat1{
+         background: url(../img/ambar.jpg) center no-repeat;
+            background-size: contain;
+       // background-color: rgba(0,0,0,0.5);
+        &:hover{
+          background: url(../img/ambar1.jpg) center no-repeat;
+                background-size: contain;
+        }
+        img{
+           visibility: hidden!important;
+        }
+    }
+    
+    .colcat2{
+         background: url(../img/japa.jpg) center no-repeat;
+            background-size: contain;
+    
+       // background-color: rgba(0,0,0,0.5);
+        &:hover{
+          background: url(../img/japa2.jpg) center no-repeat;
+                background-size: contain;
+        }
+        img{
+            visibility: hidden;
+        }
+    }
+}
+#temporada{
+        padding-top: inherit;
+    .contenedor{
+        background-color: #f9f8f7;
+        
+    }
+    .col{
+            min-height: inherit;
+    padding: 60px;
+    display: block;
+    margin: auto;
+    }
+    h2{
+        text-align: left;
+        span{
+            display: block;
+            font-weight: normal;
+        }
+    }
+}
+
+
 @import "responsive";

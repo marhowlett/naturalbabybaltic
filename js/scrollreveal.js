@@ -358,8 +358,8 @@
       // --
       // See section 4.2. in the Documentation:
       // https://github.com/jlmakes/scrollreveal.js#42-improve-user-experience
-      elem.styles.inline = elem.domEl.getAttribute('style') || ''
-      elem.styles.inline += '; visibility: visible; '
+     /* elem.styles.inline = elem.domEl.getAttribute('style') || ''
+      elem.styles.inline += '; visibility: visible; '*/
 
       // grab the elements existing opacity.
       elem.styles.computed.opacity = computed.opacity

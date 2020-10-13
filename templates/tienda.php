@@ -33,10 +33,10 @@ Te invitamos a conocer los beneficios de cada una de nuestras creaciones...</str
             </div>
            
         
-         <?php echo do_shortcode('[recent_products per_page="6" columns="2" orderby="date" order="DESC"]');
+         <?php echo do_shortcode('[product_category per_page="6" columns="2" orderby="menu_order title" order="ASC" category="ambar"]');
     ?>
    <div class="center">
-      <a href="https://naturalbabybaltic.com/tienda/" class="btn">Ver más ►</a>
+      <a href="https://naturalbabybaltic.com/product-category/ambar/" class="btn">Ver más ►</a>
        </div>
     
     </section>

@@ -3,46 +3,48 @@
     get_header();
 ?>
  <section id="banner" class="template-section">
-        
-          <h2><strong>JOYAS</strong> hechas a<br>
-mano con piedras<br>
-y cristales <strong>NATURALES</strong></h2>
-         <div class="bannernosotras">
-          <p class="somos">Te invitamos a conocer la historia de nuestro <br>
-          proyecto familiar K’uub Natural Baby Baltic</p>
-       
-         </div> 
-          <div class="center">
-           <a href="https://naturalbabybaltic.com/nosotras/" class="btn cafe">SABER MÁS ►</a>
-           </div>
+        <?php echo do_shortcode('[rev_slider alias="jewelry1"]');
+    ?>
+          
     </section>
+    <section id="catalogo" class="template-section">
+       <div class="contenedor">
+          <div class="grid">
+         
+          <div class="col "><div class="tooltip2 colcat1"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambar.jpg" alt="somos">
+              <span class="tooltiptext"><div class="center"><h3 class="white"> Goza de los beneficios que el Ámbar Báltico te ofrece a ti y tu familia. </h3><a href="https://naturalbabybaltic.com/tienda-ejemplos/"  class="btn"> COMPRAR</a></div></span>
+          </div><h2>ÁMBAR</h2></div>
+          <div class="col "><div class="tooltip2 colcat2"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/japa.jpg" alt="somos">
+              <span class="tooltiptext"><div class="center"><h3 class="white">Las cuentas de Mala se utilizan para establecer intenciones, meditar y para ayudarte a manifestar tus sueños.</h3><a href="https://naturalbabybaltic.com/japa"  class="btn"> COMPRAR</a></div></span>
+          </div><h2>JAPA MALA</h2></div>
+           
+      </div>
+  </div>
+          
+           
+       
+        
+    </section>
+    <section id="temporada" class="template-section">
+    <a href="https://naturalbabybaltic.com/product-category/productos-de-temporada/">
+    <div class="contenedor">
+        <div class="grid">
+            <div class="col"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/mika.png" alt="somos"></div>
+            <div class="col"><h2>PRODUCTOS de <span>TEMPORADA</span></h2></div>
+        </div>
+    </div>
+    </a>
+</section>
     
-     <section id="joyeria" class="template-section">
- <h2>¡Conoce nuestra joyería!</h2>
- <p>Todos nuestros collares son especiales, están diseñados de acuerdo a la necesidad o personalidad del niño o adulto. El ámbar se potencia en combinación con otros minerales y piedras semipreciosas.</p>
- <div class="invitamos">
- <p>Te invitamos a conocer todas nuestras combinaciones</p>
- </div>
- <hr class="derecha">
- <hr class="izquierda">
- 
-</section>
- <section id="joyeria" class="template-section">
-<?php echo do_shortcode('[recent_products per_page="6" columns="2" orderby="date" order="DESC"]');
-    ?>
-     <div class="center">
-      <a href="https://naturalbabybaltic.com/tienda-ejemplos/" class="btn">IR A LA TIENDA ►</a>
-       </div>
-</section>
-<section id="blog" class="template-section">
-<hr>
- <h2>Nuestro BLOG</h2>
 
-  <?php echo do_shortcode('[woodmart_blog items_per_page="2" pagination="more-btn" blog_design="masonry" blog_spacing="30" parts_title="1" parts_meta="1" parts_text="1" parts_btn="1" lazy_loading="no" blog_columns="2"]');
+
+<section id="blog" class="template-section">
+<div class="contenedor">
+ <h2>¡Únete a nuestra comunidad!</h2>
+
+  <?php echo do_shortcode('[elfsight_instagram_feed id="1"]');
     ?>
-     <div class="center">
-      <a href="https://naturalbabybaltic.com/blog/" class="btn">VER TODAS LAS PUBLICACIONES ►</a>
-       </div>
+     </div>
 </section>
 
 

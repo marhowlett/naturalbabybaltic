@@ -17,6 +17,17 @@
   font-weight: 600;
   font-style: normal;
 }
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+ul,
+li {
+  font-family: 'Raleway' !important;
+}
 /* Ajustes generales de la plantilla */
 .whb-scroll-stick .woodmart-logo img {
   max-height: 90px;
@@ -26,6 +37,20 @@
 .main-page-wrapper {
   padding-top: inherit;
   margin-top: inherit;
+}
+body.woodmart-archive-shop .page-title.color-scheme-light .entry-title {
+  color: #FFF;
+  font-size: 25px;
+}
+body.woodmart-archive-shop .term-description {
+  padding: 20px;
+}
+body.woodmart-archive-shop .term-description p {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
 }
 @media (min-width: 1025px) {
   .whb-sticked .whb-general-header .woodmart-logo img {
@@ -80,6 +105,10 @@ h2 {
   font-weight: bold;
   line-height: 1.3em;
 }
+.template-section h3 {
+  font-family: 'Raleway';
+  font-weight: normal;
+}
 .template-section p,
 .template-section ul {
   color: #7d7d7d;
@@ -122,41 +151,65 @@ h2 {
 }
 body.home .row,
 body.page-id-36 .row,
-body.page-id-63 .row {
+body.page-id-63 .row,
+body.page-template-tienda2 .row {
   display: inherit;
 }
+h4.intro {
+  font-family: 'Raleway';
+}
+body.home .whb-header {
+  margin-bottom: inherit;
+}
 #banner {
-  background: url(../img/banner.png) no-repeat center;
-  padding: 200px 0;
+  padding: inherit;
+}
+#banner p,
+#banner a,
+#banner img,
+#banner h3,
+#banner h2 {
+  opacity: inherit!important;
+  transform: initial!important;
 }
 #banner h2 {
   text-align: left;
   position: relative;
   top: 232px;
   left: 100px;
+  font-weight: normal;
 }
 #banner .bannernosotras {
   background-color: #00c3a8;
   width: 813px;
-  padding: 15px;
+  padding: 0px;
   position: relative;
   top: 232px;
 }
 #banner .bannernosotras p {
   position: relative;
   left: 100px;
-  top: 8px;
+  top: 13px;
   font-size: 30px;
   color: white;
 }
 #banner .center {
   text-align: left;
   position: relative;
-  top: 126px;
+  top: 106px;
   left: 759px;
 }
 #banner .center .btn {
-  padding: 24px 73px;
+  padding: 18px 52px;
+}
+#banner .center2 {
+  text-align: right;
+  position: relative;
+  top: 217px;
+  left: 100px;
+}
+#banner .center2 .btn {
+  padding: 18px 52px;
 }
 #joyeria .invitamos {
   background-color: #00c3a8;
@@ -198,9 +251,6 @@ body.page-id-63 .row {
   position: relative;
   top: -50px;
 }
-#blog h2 {
-  color: #00c3a8;
-}
 #blog p {
   text-align: center;
   max-width: 800px;
@@ -210,10 +260,12 @@ body.page-id-63 .row {
 #pagar {
   display: none;
 }
-body.product-template-default #pagar {
+body.product-template-default #pagar,
+body.page-template-tienda2 #pagar {
   display: inherit;
 }
-body.product-template-default #pagar h2 {
+body.product-template-default #pagar h2,
+body.page-template-tienda2 #pagar h2 {
   text-align: left;
   position: relative;
   left: 60px;
@@ -221,29 +273,39 @@ body.product-template-default #pagar h2 {
   margin-bottom: 40px;
 }
 body.product-template-default #pagar h3,
-body.product-template-default #pagar p {
+body.page-template-tienda2 #pagar h3,
+body.product-template-default #pagar p,
+body.page-template-tienda2 #pagar p {
   color: #7d7d7d;
 }
-body.product-template-default #pagar img {
+body.product-template-default #pagar img,
+body.page-template-tienda2 #pagar img {
   margin-bottom: 20px;
 }
-body.product-template-default #pagar .brindamos {
+body.product-template-default #pagar .brindamos,
+body.page-template-tienda2 #pagar .brindamos {
   background-color: #00c3a8;
 }
 body.product-template-default #pagar .brindamos p,
-body.product-template-default #pagar .brindamos a {
+body.page-template-tienda2 #pagar .brindamos p,
+body.product-template-default #pagar .brindamos a,
+body.page-template-tienda2 #pagar .brindamos a {
   color: white;
 }
-body.product-template-default #pagar .col {
+body.product-template-default #pagar .col,
+body.page-template-tienda2 #pagar .col {
   min-height: inherit;
 }
-body.product-template-default #pagar .real {
+body.product-template-default #pagar .real,
+body.page-template-tienda2 #pagar .real {
   padding: 60px;
 }
-body.product-template-default #pagar .real p {
+body.product-template-default #pagar .real p,
+body.page-template-tienda2 #pagar .real p {
   max-width: 387px;
 }
-body.product-template-default #pagar .colpr {
+body.product-template-default #pagar .colpr,
+body.page-template-tienda2 #pagar .colpr {
   width: 50%;
   padding: 0px;
 }
@@ -277,7 +339,9 @@ body.product-template-default #pagar .colpr {
   margin-top: -70px;
 }
 #contacto .azul .brindamos img.logo {
-  width: 40%;
+  width: 30%;
+  margin-bottom: 20px;
+  margin-top: 80px;
 }
 #contacto .azul .caldera-grid .form-control {
   background-color: transparent;
@@ -360,7 +424,7 @@ body.product-template-default #pagar .colpr {
   margin: 20px auto;
   position: relative;
   right: -28px;
-  color: #535353;
+  color: #616161;
   text-align: justify;
 }
 #nosotros .soy2 {
@@ -370,6 +434,9 @@ body.product-template-default #pagar .colpr {
 }
 #nosotros .sam {
   margin-top: 140px;
+}
+#tienda {
+  padding-top: inherit;
 }
 #tienda h1 {
   color: #c9ad62;
@@ -383,7 +450,7 @@ body.product-template-default #pagar .colpr {
   margin-bottom: 50px;
 }
 #tienda .col {
-  min-height: 980px;
+  min-height: 800px;
   text-align: center;
   padding: inherit;
 }
@@ -397,7 +464,7 @@ body.product-template-default #pagar .colpr {
   width: 100%;
   /* right: -40px; */
   z-index: 1;
-  margin-top: 203px;
+  margin-top: 40px;
 }
 #tienda .somos h2 {
   margin-bottom: auto;
@@ -412,7 +479,7 @@ body.product-template-default #pagar .colpr {
   margin: 20px auto;
   position: relative;
   right: -28px;
-  color: #535353;
+  color: #616161;
   text-align: justify;
 }
 #tienda p strong {
@@ -424,6 +491,63 @@ body.product-template-default #pagar .colpr {
   margin: 20px auto;
 }
 #tienda .sam {
+  margin-top: 140px;
+}
+#tienda2 {
+  padding-top: inherit;
+}
+#tienda2 h1 {
+  color: #c9ad62;
+  position: relative;
+  right: -76px;
+  font-size: 50px;
+  top: -21px;
+}
+#tienda2 .fondo {
+  background: url(../img/joya2.png) no-repeat center;
+  background-size: contain;
+}
+#tienda2 .col {
+  min-height: 980px;
+  text-align: center;
+  padding: inherit;
+}
+#tienda2 .somos {
+  background-color: #00c3a8;
+  font-weight: bold;
+  margin: 2em auto;
+  overflow: hidden;
+  padding: 1.5em 1.5em;
+  position: relative;
+  width: 100%;
+  /* right: -40px; */
+  z-index: 1;
+}
+#tienda2 .somos h2 {
+  margin-bottom: auto;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  position: relative;
+  right: -68px;
+}
+#tienda2 p {
+  max-width: 450px;
+  margin: 20px auto;
+  position: relative;
+  right: -28px;
+  color: #616161;
+  text-align: justify;
+}
+#tienda2 p strong {
+  font-size: 1.4em;
+}
+#tienda2 .soy2 {
+  position: relative;
+  width: 350px;
+  margin: 20px auto;
+}
+#tienda2 .sam {
   margin-top: 140px;
 }
 #nosotros2 h1 {
@@ -519,7 +643,7 @@ body.product-template-default #pagar .colpr {
   margin-bottom: 30px;
 }
 #elegir li {
-  color: #535353;
+  color: #616161;
 }
 #elegir ul li::before {
   content: "•";
@@ -577,11 +701,20 @@ body.product-template-default #pagar .colpr {
   padding: 10px 20px 20px 90px;
   text-transform: uppercase;
 }
+.color-scheme-light .woodmart-product-categories .children {
+  background-color: white;
+}
+.color-scheme-light .woodmart-product-categories .children a {
+  color: #00c3a8;
+}
 #aviso .contenedor {
   max-width: 900px;
   text-align: justify;
   background-color: #eeeeee;
   padding: 40px;
+}
+#aviso li {
+  color: #7d7d7d;
 }
 ul.menu a {
   color: #00c3a8 !important;
@@ -623,9 +756,97 @@ footer .lap {
 footer .movil {
   display: none;
 }
+#catalogo {
+  padding: 150px 0 0 0;
+}
+#catalogo h2 {
+  color: #00c3a8;
+  font-size: 35px;
+  margin-top: 10px;
+}
+#catalogo .tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+#catalogo .tooltip2 .tooltiptext {
+  visibility: hidden;
+  /* width: 120px; */
+  color: #fff;
+  text-align: center;
+  /* border-radius: 6px; */
+  padding: 5px 0;
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  padding: 10px;
+  /* display: block; */
+  /* margin: auto; */
+  /* float: left; */
+  z-index: 1;
+}
+#catalogo h3.white {
+  color: white;
+  /* text-align: center; */
+  font-size: 28px;
+}
+#catalogo .col {
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+#catalogo .tooltip2:hover img {
+  opacity: 0.7;
+}
+#catalogo .tooltip2:hover .tooltiptext {
+  visibility: visible;
+}
+#catalogo .pad {
+  padding: 60px;
+}
+#catalogo .colcat1 {
+  background: url(../img/ambar.jpg) center no-repeat;
+  background-size: contain;
+}
+#catalogo .colcat1:hover {
+  background: url(../img/ambar1.jpg) center no-repeat;
+  background-size: contain;
+}
+#catalogo .colcat1 img {
+  visibility: hidden!important;
+}
+#catalogo .colcat2 {
+  background: url(../img/japa.jpg) center no-repeat;
+  background-size: contain;
+}
+#catalogo .colcat2:hover {
+  background: url(../img/japa2.jpg) center no-repeat;
+  background-size: contain;
+}
+#catalogo .colcat2 img {
+  visibility: hidden;
+}
+#temporada {
+  padding-top: inherit;
+}
+#temporada .contenedor {
+  background-color: #f9f8f7;
+}
+#temporada .col {
+  min-height: inherit;
+  padding: 60px;
+  display: block;
+  margin: auto;
+}
+#temporada h2 {
+  text-align: left;
+}
+#temporada h2 span {
+  display: block;
+  font-weight: normal;
+}
 @media (max-width: 768px) {
   .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
-    display: none;
+    display: none!important;
   }
   .marca {
     margin-top: -25px;
@@ -674,37 +895,51 @@ footer .movil {
     font-size: 32px;
   }
   #banner {
-    background: url(../img/banner.jpg) no-repeat center;
     padding: inherit;
     position: relative;
-    top: -70px;
   }
   #banner h2 {
-    text-align: center;
-    position: relative;
-    top: 343px;
-    margin-bottom: 137px;
-    left: inherit;
     font-size: 30px;
+    position: relative;
+    left: 192px;
+    top: 194px;
   }
   #banner .bannernosotras p {
-    position: relative;
-    left: inherit;
-    top: 8px;
+    left: 200px;
     font-size: 16px;
     color: white;
   }
   #banner .center {
     text-align: left;
-    position: relative;
-    top: 191px;
-    left: inherit;
+    left: 0px;
+    top: 198px;
   }
   #banner .center .btn {
-    padding: 10px;
+    padding: 10px!important;
+    text-align: center!important;
+    position: relative;
+    right: 30px;
+  }
+  #banner .center2 {
+    text-align: left;
+    left: -25px;
+    top: 198px;
+  }
+  #banner .center2 .btn {
+    padding: 10px!important;
+    text-align: center!important;
+    position: relative;
+    right: 30px;
   }
   .whb-scroll-stick .woodmart-logo img {
     margin-top: -80px;
+  }
+  body.product-template-default #pagar .colpr,
+  body.page-template-tienda2 #pagar .colpr {
+    width: 100%;
+  }
+  #catalogo {
+    padding-top: inherit;
   }
   #joyeria {
     margin-top: 130px;
@@ -761,6 +996,21 @@ footer .movil {
   }
   #tienda .col {
     min-height: 618px;
+  }
+  #tienda2 .col {
+    min-height: 342px;
+  }
+  #tienda2 p {
+    max-width: initial;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    right: 0px;
+    color: #535353;
+    text-align: justify;
+  }
+  #tienda2 h1 {
+    right: -18px;
   }
   #nosotros h1 {
     right: inherit;
@@ -871,5 +1121,13 @@ footer .movil {
   #elegir img {
     display: block;
     margin: auto;
+  }
+  #catalogo h3.white {
+    color: white;
+    /* text-align: center; */
+    font-size: 18px;
+  }
+  #catalogo .tooltip2 .tooltiptext {
+    top: 52px;
   }
 }
